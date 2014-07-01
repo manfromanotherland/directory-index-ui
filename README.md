@@ -15,7 +15,6 @@ All the files are dot files – invisible for the Finder.
 
 ## TO DO
 
-- add favicons support
 - add keyboard navigation
 - add support for themes
 - options menu (change theme, show invisible files, et cetera)

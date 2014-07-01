@@ -206,6 +206,10 @@ table a {
 }
 
 .col-name a {
+	padding-left: 1.5em;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 1em 1em;
 	color: #61636d;
 }
 
