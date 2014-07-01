@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+}
+
+
+
+/* Main Styles
+==============================================================================*/
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font: 1em/1.875em "Helvetica Neue", Arial, sans-serif;
+	color: #61636d;
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+
+
+
+/* Header
+==============================================================================*/
+.header {
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	height: 50px;
+	padding: 0 5%;
+	line-height: 50px;
+	background-image: linear-gradient(#e9eaea, #cecfd2);
+	border-bottom: 1px solid #bbb;
+}
+
+.header h1 {
+	float: left;
+	font-size: 1.25em;
+}
+
+
+/* === Navigation / Options === */
+.nav {
+	float: right;
+}
+
+
+
+
+/* Table
+==============================================================================*/
+table {
+	width: 100%;
+	white-space: nowrap;
+}
+
+th:first-child,
+th:last-child {
+	width: 5%;
+	cursor: default;
+}
+
+tbody tr:nth-child(odd) {
+	background: #f4f4f4;
+}
+
+td {
+	position: relative;
+}
+
+tbody td:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1em;
+	height: 30px;
+	background-image: linear-gradient(90deg, rgba(255,255,255,0), #fff);
+	content: " ";
+}
+tbody tr:nth-child(odd) td:before { background-image: linear-gradient(90deg, rgba(244,244,244,0), #f4f4f4); }
+tbody tr:hover td:before          { background-image: linear-gradient(90deg, rgba(81,83,92,0), #51535c); }
+
+.col-name {
+	width: 40%;
+}
+
+.col-size {
+	text-align: right;
+}
+
+
+/* === Table Head === */
+thead {
+	position: relative;
+	height: 40px;
+	font-weight: 500;
+	line-height: 40px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+
+thead tr {
+	position: relative;
+	z-index: 100;
+	box-shadow: 0 0 15px rgba(0,0,0,1);
+}
+
+th {
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+th span {
+	padding: 0 1em;
+}
+
+th:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 100%;
+	background-image: linear-gradient(#fff, #cecece);
+	content: "";
+}
+
+th:first-child:before {
+	display: none;
+}
+
+
+/* === SortTable === */
+.sorttable_sorted,
+.sorttable_sorted_reverse {
+	background-image: linear-gradient(#fff, #e8e8e8);
+}
+
+#sorttable_sortfwdind,
+#sorttable_sortrevind {
+	float: right;
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 1.125em .875em 0 0;
+	color: transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #61636d;
+}
+
+#sorttable_sortfwdind {
+	border-top: 5px solid #61636d;
+	border-bottom: none;
+}
+
+
+/* === Links === */
+table a {
+	display: block;
+	padding: 0 1em;
+	color: #a2a4ab;
+}
+
+.col-name a {
+	color: #61636d;
+}
+
+tbody tr:hover {
+	background: #51535c;
+}
+
+tbody tr:hover a {
+	color: #fff;
+}
