@@ -12,18 +12,18 @@
 	if($_SERVER['QUERY_STRING']=="hidden") {
 		$hide="";
 		$ahref="./";
-		$atext="Hide";
+		$atext="hide";
 	} else {
 		$hide=".";
 		$ahref="./?hidden";
-		$atext="Show";
+		$atext="show";
 	}
 	?>
 
 	<header role="banner" class="header">
 		<h1>Localhost</h1>
 		<nav role="navigation" class="nav">
-			<?php echo("<a href='$ahref'>$atext hidden files</a>"); ?>
+			<?php echo("<a href='$ahref' class='btn btn--$atext'>Hidden</a>"); ?>
 		</nav>
 	</header>
 
