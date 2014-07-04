@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -31,10 +34,10 @@ a {
 	text-decoration: none;
 }
 
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
 
-
-/* Main Styles
-==============================================================================*/
 *,
 *:after,
 *:before {
@@ -61,11 +64,10 @@ body {
 	clear: both;
 }
 
+/* ==========================================================================
+   Header
+   ========================================================================== */
 
-
-
-/* Header
-==============================================================================*/
 .header {
 	position: relative;
 	z-index: 3;
@@ -82,8 +84,9 @@ body {
 	font-size: 1.25em;
 }
 
+/* Navigation
+   ========================================================================== */
 
-/* === Navigation / Options === */
 .nav {
 	float: right;
 }
@@ -111,9 +114,10 @@ body {
 		0 1px 0 rgba(255,255,255,.3);
 }
 
+/* ==========================================================================
+   Table
+   ========================================================================== */
 
-/* Table
-==============================================================================*/
 table {
 	width: 100%;
 	white-space: nowrap;
@@ -142,8 +146,14 @@ tbody td:before {
 	background-image: linear-gradient(90deg, rgba(255,255,255,0), #fff);
 	content: " ";
 }
-tbody tr:nth-child(odd) td:before { background-image: linear-gradient(90deg, rgba(244,244,244,0), #f4f4f4); }
-tbody tr:hover td:before          { background-image: linear-gradient(90deg, rgba(81,83,92,0), #51535c); }
+
+tbody tr:nth-child(odd) td:before {
+	background-image: linear-gradient(90deg, rgba(244,244,244,0), #f4f4f4);
+}
+
+tbody tr:hover td:before {
+	background-image: linear-gradient(90deg, rgba(81,83,92,0), #51535c);
+}
 
 .col-name {
 	width: 40%;
@@ -153,8 +163,9 @@ tbody tr:hover td:before          { background-image: linear-gradient(90deg, rgb
 	text-align: right;
 }
 
+/* Table Head
+   ========================================================================== */
 
-/* === Table Head === */
 thead {
 	position: relative;
 	height: 40px;
@@ -195,8 +206,8 @@ th:first-child:before {
 	display: none;
 }
 
+/* SortTable */
 
-/* === SortTable === */
 .sorttable_sorted,
 .sorttable_sorted_reverse {
 	background-image: linear-gradient(#fff, #e8e8e8);
@@ -220,8 +231,8 @@ th:first-child:before {
 	border-bottom: none;
 }
 
+/* Links */
 
-/* === Links === */
 table a {
 	display: block;
 	padding: 0 1em;
