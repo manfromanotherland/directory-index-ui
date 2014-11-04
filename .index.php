@@ -113,9 +113,7 @@
 	</table>
 
 	<script src=".localhost/js/jquery.min.js"></script>
-	<script src=".localhost/js/colResizable-1.3.med.js"></script>
 	<script src=".localhost/js/sorttable.js"></script>
-	<script src=".localhost/js/main.js"></script>
 
 </body>
 </html>
