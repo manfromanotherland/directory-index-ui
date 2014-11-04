@@ -1,10 +1,6 @@
 /* ==========================================================================
    Reset
    ========================================================================== */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -32,6 +28,12 @@ table {
 }
 a {
 	text-decoration: none;
+}
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* ==========================================================================
@@ -156,11 +158,11 @@ tbody tr:hover td:before {
 }
 
 .col-name {
-	width: 40%;
+	width: 60%;
 }
 
-.col-size {
-	text-align: right;
+.col-date {
+	width: 40%;
 }
 
 /* Table Head
@@ -206,6 +208,10 @@ th:first-child:before {
 }
 
 /* SortTable */
+
+.CRC {
+	overflow: hidden;
+}
 
 .sorttable_sorted,
 .sorttable_sorted_reverse {
@@ -253,3 +259,7 @@ tbody tr:hover {
 tbody tr:hover a {
 	color: #fff;
 }
+
+/* Responsive
+   ========================================================================== */
+
