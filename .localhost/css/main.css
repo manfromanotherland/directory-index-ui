@@ -122,13 +122,14 @@ body {
 
 table {
 	width: 100%;
-	white-space: nowrap;
+	table-layout: fixed;
 }
 
 th:first-child,
 th:last-child {
 	width: 5%;
 	cursor: default;
+	pointer-events: none;
 }
 
 tbody tr:nth-child(odd) {
@@ -137,6 +138,8 @@ tbody tr:nth-child(odd) {
 
 td {
 	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 tbody td:before {
@@ -158,11 +161,11 @@ tbody tr:hover td:before {
 }
 
 .col-name {
-	width: 60%;
+	width: 55%;
 }
 
 .col-date {
-	width: 40%;
+	width: 35%;
 }
 
 /* Table Head
@@ -208,10 +211,6 @@ th:first-child:before {
 }
 
 /* SortTable */
-
-.CRC {
-	overflow: hidden;
-}
 
 .sorttable_sorted,
 .sorttable_sorted_reverse {
