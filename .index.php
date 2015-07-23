@@ -33,7 +33,7 @@
 			<tr>
 				<th></th>
 				<th class="col-name"><span>Name</span></th>
-				<th class="col-date"><span>Modified</span></th>
+				<th class="col-date"><span>Date Modified</span></th>
 				<th></th>
 			</tr>
 	    </thead>
@@ -76,40 +76,39 @@
 			$modtime=date("M j, Y, g:i A", filemtime($dirArray[$index]));
 			$timekey=date("YmdHis", filemtime($dirArray[$index]));
 
+				// Separates directories, and performs operations on those directories
+				if(is_dir($dirArray[$index])) {
 
-		// Separates directories, and performs operations on those directories
-		if(is_dir($dirArray[$index])) {
+					$extn="Folder";
+					$size="--";
+					$sizekey="0";
+					$class="dir";
 
-			$extn="Folder";
-			$size="--";
-			$sizekey="0";
-			$class="dir";
+					// Gets favicon.ico, and displays it, only if it exists.
+					if(file_exists("$namehref/favicon.ico")) {
+						$favicon=" style='background-image:url($namehref/favicon.ico);'";
+						$extn="Website";
+					}
 
-			// Gets favicon.ico, and displays it, only if it exists.
-			if(file_exists("$namehref/favicon.ico")) {
-				$favicon=" style='background-image:url($namehref/favicon.ico);'";
-				$extn="Website";
+				// Cleans up . and .. directories
+				if($name=="."){$name=". (Current Directory)"; $extn="System Folder"; $favicon=" style='background-image:url($namehref/.favicon.ico);'";}
+				if($name==".."){$name=".. (Parent Directory)"; $extn="System Folder";}
 			}
 
-			// Cleans up . and .. directories
-			if($name=="."){$name=". (Current Directory)"; $extn="System Folder"; $favicon=" style='background-image:url($namehref/.favicon.ico);'";}
-			if($name==".."){$name=".. (Parent Directory)"; $extn="System Folder";}
-		}
+			// Output
+			echo("
+			<tr class='$class'>
+				<td></td>
+				<td class='col-name'><a href='./$namehref'$favicon class='name'>$name</a></td>
+				<td sorttable_customkey='$timekey' class='col-date'><a href='./$namehref'>$modtime</a></td>
+				<td></td>
+			</tr>");
 
-		// Output
-		echo("
-		<tr class='$class'>
-			<td></td>
-			<td class='col-name'><a href='./$namehref'$favicon class='name'>$name</a></td>
-			<td sorttable_customkey='$timekey' class='col-date'><a href='./$namehref'>$modtime</a></td>
-			<td></td>
-		</tr>");
 		}
-
 	}
-	?>
+?>
 
-	    </tbody>
+		</tbody>
 	</table>
 
 	<script src=".localhost/js/jquery.min.js"></script>
