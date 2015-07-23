@@ -1,20 +1,19 @@
 # Pretty Localhost is Pretty
 
-Tired of the default and ugly localhost? You can change that, for free!
+I don't like the default styling of localhost (directory contents), so I redesign it.
 
-## Turn this…
+## Before
 
-![Localhost Before](http://f.cl.ly/items/3k17123J0E0w2c2r2e3A/localhost%20before.png)
+![Localhost Before](before.png)
 
-## Into this!
+## After
 
-![Localhost After](http://f.cl.ly/items/1j0L2P1M1u2V1B0y463l/localhost%20after.png)
+![Localhost After](after.png)
 
-**SUCH PIXELS!**
+## Installing
 
-## How to Install
-
-Download the repository and move the .dot files to your localhost directory – on OS X, that will be the `Sites` folder.
+1. Download the repository and move the .dot files to your localhost directory – on OS X, that will be the `Sites` folder.
+2. Done!
 
 To toggle visibility of .dot's files, do this on Terminal:
 
@@ -22,10 +21,18 @@ To toggle visibility of .dot's files, do this on Terminal:
 
 To get back to the default behavior, just change `TRUE` to `FALSE`.
 
-## TO DO
+## Features
 
-- Add keyboard navigation
-- Add support for themes
-- Options menu (change theme, show hidden files, et cetera)
-- Path bar (Finder style)
-- Turn this in a Chrome Extension (maybe!)
+- **Such pixels!**
+- Responsive
+- Sort by name or modification date
+- Show/hide hidden files
+- Favicon's
+
+## Collaborating
+
+If you have any suggestions, please create an [issue](issues/new) or fork the project and submit your pull request.
+
+## Acknowledge
+
+Code heavily taken from [this post](https://css-tricks.com/snippets/php/display-styled-directory-contents/) on CSS-Tricks. So hats off to [Chris Coyier](https://twitter.com/chriscoyier)!
