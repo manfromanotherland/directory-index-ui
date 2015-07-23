@@ -27,11 +27,11 @@ To get back to the default behavior, just change `TRUE` to `FALSE`.
 - Responsive
 - Sort by name or modification date
 - Show/hide hidden files
-- Favicon's
+- Favicon
 
 ## Collaborating
 
-If you have any suggestions, please create an [issue](issues/new) or fork the project and submit your pull request.
+If you have any suggestions, please create an [issue](localhost/issues) or fork the project and submit your pull request.
 
 ## Acknowledge
 
