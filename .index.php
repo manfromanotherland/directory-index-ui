@@ -33,7 +33,7 @@
 			<tr>
 				<th></th>
 				<th class="col-name"><span>Name</span></th>
-				<th class="col-date"><span>Date Modified</span></th>
+				<th class="col-date"><span>Date <span>Modified</span></span></th>
 				<th></th>
 			</tr>
 	    </thead>

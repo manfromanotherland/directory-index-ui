@@ -161,11 +161,11 @@ tbody tr:hover td:before {
 }
 
 .col-name {
-	width: 55%;
+	width: 60%;
 }
 
 .col-date {
-	width: 35%;
+	width: 40%;
 }
 
 /* Table Head
@@ -192,8 +192,17 @@ th {
 	user-select: none;
 }
 
-th span {
+th > span {
 	padding: 0 1em;
+	white-space: nowrap;
+}
+
+@media (max-width: 450px) {
+
+	th > span span {
+		display: none;
+	}
+
 }
 
 th:before {
