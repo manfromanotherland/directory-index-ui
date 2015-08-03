@@ -1,6 +1,6 @@
 # Pretty Localhost is Pretty
 
-I never liked the default styling of localhost (does anyone?), so I redesign it!
+I never liked the default styling of localhost (directory index), so I redesign it.
 
 ## Before
 
@@ -23,7 +23,6 @@ To get back to the default behavior, just change `TRUE` to `FALSE`.
 
 ## Features
 
-- **Such pixels!**
 - Responsive
 - Sort by name or modification date
 - Show/hide hidden files
