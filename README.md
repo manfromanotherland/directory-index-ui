@@ -2,13 +2,9 @@
 
 I never liked the default styling of localhost (directory index), so I redesign it.
 
-## Before
-
-![Localhost Before](before.png)
-
-## After
-
-![Localhost After](after.png)
+| Before 🤢 | After 😍 |
+| --- | --- |
+| ![Localhost Before](before.png) | ![Localhost After](after.png) |
 
 ## Installing
 
