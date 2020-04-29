@@ -12,9 +12,9 @@ I never liked the default styling of localhost (directory index), so I redesign 
 2. Done!
 
 To toggle visibility of .dot's files, do this on Terminal:
-
-    defaults write com.apple.finder AppleShowAllFiles -bool TRUE && killall Finder
-
+```sh
+defaults write com.apple.finder AppleShowAllFiles -bool TRUE && killall Finder
+```
 To get back to the default behavior, just change `TRUE` to `FALSE`.
 
 ## Features
