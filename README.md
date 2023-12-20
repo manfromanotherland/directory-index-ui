@@ -1,14 +1,14 @@
-# Pretty Localhost is Pretty
+# Directory index redesigned
 
-I never liked the default styling of localhost (directory index), so I redesign it.
+I never liked the default styling of the web directory index on macOS, so I redesign it.
 
 | Before 🤢 | After 😍 |
 | --- | --- |
-| ![Localhost Before](before.png) | ![Localhost After](after.png) |
+| ![Before](before.png) | ![After](after.png) |
 
 ## Installing
 
-1. Download the repository and move the .dot files to your localhost directory – on OS X, that will be the `Sites` folder.
+1. Download the repository and move the .dot files to the directory you want to style – for instance, on macOS that can be the `Sites` folder.
 2. Done!
 
 To toggle visibility of .dot's files, do this on Terminal:
@@ -22,11 +22,7 @@ To get back to the default behavior, just change `TRUE` to `FALSE`.
 - Responsive
 - Sort by name or modification date
 - Show/hide hidden files
-- Favicons
-
-## Collaborating
-
-If you have any suggestions, please create an [issue](https://github.com/edmundojr/localhost/issues) or fork the project and submit your pull request.
+- Uses favicons from directories
 
 ## Alternatives
 
